@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6LoadingBtn</title>
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- HTML -->
+
+    <div class="container">
+      <button id="loading-btn" onclick="loading()">
+    <i class="fa fa-spinner fa-pulse"></i>
+    Text Loading</button>
+    </div>
+  </body>
+
+  <!-- CSS -->
+
+  <style>
+    body {
+      background-color: lightgray;
+    }
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    button {
+      background-color: rgb(0, 0, 255);
+      color: white;
+      width: 14rem;
+      height: 3.5rem;
+      font-size: 25px;
+      font-weight: bold;
+      margin: 1.5rem;
+      padding: 4px;
+      border: 3px solid black;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+
+  <!-- SCRIPT -->
+
+  <script>
+    function loading(){
+      document.getElementById('loading-btn').style.display='none';
+    }
+  </script>
+</html>
